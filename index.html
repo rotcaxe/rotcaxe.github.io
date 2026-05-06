@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MEDAD | مداد</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-8fK1Nq+3NVhY+7tQkzcv3xqoSSjMBDlNIQP5CKEM5Qn2ATmNnS/xP8q4ILb7iDpiRnbV0V4CuhOQCLxC4Y3zYQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #faf8f7;
+        --primary: #132539;
+        --primary-dark: #111d2b;
+        --accent: #00a6c1;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", "Cairo", sans-serif;
+        background: var(--bg);
+        color: var(--primary-dark);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 16px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 24px 60px rgba(17, 29, 43, 0.12);
+        width: min(900px, 100%);
+        padding: 48px 32px;
+        border: 1px solid rgba(19, 37, 57, 0.08);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .title {
+        font-size: clamp(28px, 4vw, 40px);
+        font-weight: 700;
+        color: var(--primary);
+        letter-spacing: 1px;
+      }
+
+      .subtitle {
+        margin-top: 12px;
+        font-size: clamp(18px, 3vw, 24px);
+        font-weight: 600;
+        color: var(--accent);
+        font-family: "Cairo", sans-serif;
+      }
+
+      .description {
+        margin-top: 16px;
+        font-size: 16px;
+        color: rgba(17, 29, 43, 0.7);
+      }
+
+      .grid {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+      }
+
+      .link-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        border-radius: 16px;
+        text-decoration: none;
+        color: var(--primary-dark);
+        border: 1px solid rgba(19, 37, 57, 0.12);
+        background: rgba(250, 248, 247, 0.8);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+      }
+
+      .link-card i {
+        font-size: 24px;
+        color: var(--accent);
+        width: 32px;
+        text-align: center;
+      }
+
+      .link-card span {
+        font-weight: 600;
+      }
+
+      .link-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(0, 166, 193, 0.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      .footer {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 14px;
+        color: rgba(17, 29, 43, 0.6);
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <h1 class="title">MEDAD</h1>
+        <div class="subtitle">مداد</div>
+        <p class="description">Connect with our office through your favorite platform.</p>
+      </header>
+
+      <section class="grid">
+        <a class="link-card" href="https://wa.me/966554752711" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a class="link-card" href="tel:+966554752711">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Us</span>
+        </a>
+        <a class="link-card" href="https://t.me/medad554752711" target="_blank" rel="noopener">
+          <i class="fa-brands fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a class="link-card" href="https://www.snapchat.com/add/medad554752711" target="_blank" rel="noopener">
+          <i class="fa-brands fa-snapchat"></i>
+          <span>Snapchat</span>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/medad554752711" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a class="link-card" href="https://www.facebook.com/61563695535633" target="_blank" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a class="link-card" href="https://tiktok.com/@medad554752711" target="_blank" rel="noopener">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+        <a class="link-card" href="https://maps.app.goo.gl/sVi2xM1xSLB21jK27" target="_blank" rel="noopener">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Location</span>
+        </a>
+      </section>
+
+      <div class="footer">© 2026 MEDAD | مداد</div>
+    </main>
+  </body>
+</html>
