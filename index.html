@@ -44,7 +44,7 @@
         background: white;
         border-radius: 24px;
         box-shadow: 0 24px 60px rgba(17, 29, 43, 0.12);
-        width: min(900px, 100%);
+        width: min(960px, 100%);
         padding: 48px 32px;
         border: 1px solid rgba(19, 37, 57, 0.08);
       }
@@ -78,32 +78,41 @@
       .grid {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 16px;
       }
 
       .link-card {
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 12px;
-        padding: 16px;
+        padding: 20px 16px;
         border-radius: 16px;
         text-decoration: none;
         color: var(--primary-dark);
         border: 1px solid rgba(19, 37, 57, 0.12);
         background: rgba(250, 248, 247, 0.8);
         transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+        text-align: center;
       }
 
       .link-card i {
-        font-size: 24px;
+        font-size: 28px;
         color: var(--accent);
-        width: 32px;
-        text-align: center;
       }
 
       .link-card span {
         font-weight: 600;
+      }
+
+      .qr {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+        padding: 6px;
+        background: white;
+        border: 1px solid rgba(19, 37, 57, 0.12);
       }
 
       .link-card:hover {
@@ -138,34 +147,74 @@
         <a class="link-card" href="https://wa.me/966554752711" target="_blank" rel="noopener">
           <i class="fa-brands fa-whatsapp"></i>
           <span>WhatsApp</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fwa.me%2F966554752711"
+            alt="WhatsApp QR code"
+          />
         </a>
         <a class="link-card" href="tel:+966554752711">
           <i class="fa-solid fa-phone"></i>
           <span>Call Us</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=tel%3A%2B966554752711"
+            alt="Phone QR code"
+          />
         </a>
         <a class="link-card" href="https://t.me/medad554752711" target="_blank" rel="noopener">
           <i class="fa-brands fa-telegram"></i>
           <span>Telegram</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Ft.me%2Fmedad554752711"
+            alt="Telegram QR code"
+          />
         </a>
         <a class="link-card" href="https://www.snapchat.com/add/medad554752711" target="_blank" rel="noopener">
           <i class="fa-brands fa-snapchat"></i>
           <span>Snapchat</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fwww.snapchat.com%2Fadd%2Fmedad554752711"
+            alt="Snapchat QR code"
+          />
         </a>
         <a class="link-card" href="https://www.instagram.com/medad554752711" target="_blank" rel="noopener">
           <i class="fa-brands fa-instagram"></i>
           <span>Instagram</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fwww.instagram.com%2Fmedad554752711"
+            alt="Instagram QR code"
+          />
         </a>
         <a class="link-card" href="https://www.facebook.com/61563695535633" target="_blank" rel="noopener">
           <i class="fa-brands fa-facebook"></i>
           <span>Facebook</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fwww.facebook.com%2F61563695535633"
+            alt="Facebook QR code"
+          />
         </a>
         <a class="link-card" href="https://tiktok.com/@medad554752711" target="_blank" rel="noopener">
           <i class="fa-brands fa-tiktok"></i>
           <span>TikTok</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Ftiktok.com%2F%40medad554752711"
+            alt="TikTok QR code"
+          />
         </a>
         <a class="link-card" href="https://maps.app.goo.gl/sVi2xM1xSLB21jK27" target="_blank" rel="noopener">
           <i class="fa-solid fa-location-dot"></i>
           <span>Location</span>
+          <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fmaps.app.goo.gl%2FsVi2xM1xSLB21jK27"
+            alt="Location QR code"
+          />
         </a>
       </section>
 
